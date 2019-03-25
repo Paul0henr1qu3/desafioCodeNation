@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.4, pytest-4.3.1, py-1.8.0, pluggy-0.9.0 -- /home/paul0henr1que/ENV/bin/python
+cachedir: .pytest_cache
+rootdir: /home/paul0henr1que/codenation/python-1, inifile:
+collecting ... collected 7 items
+
+test_submit.py::test_modules PASSED                                      [ 14%]
+test_submit.py::test_q_1 PASSED                                          [ 28%]
+test_submit.py::test_q_2 PASSED                                          [ 42%]
+test_submit.py::test_q_3 PASSED                                          [ 57%]
+test_submit.py::test_q_4 PASSED                                          [ 71%]
+test_submit.py::test_q_5 PASSED                                          [ 85%]
+test_submit.py::test_q_6 PASSED                                          [100%]
+
+=============================== warnings summary ===============================
+/home/paul0henr1que/ENV/lib/python3.6/site-packages/_pytest/cacheprovider.py:131
+  /home/paul0henr1que/ENV/lib/python3.6/site-packages/_pytest/cacheprovider.py:131: PytestWarning: cache could not write path /home/paul0henr1que/codenation/python-1/.pytest_cache/v/cache/stepwise
+    self.warn("cache could not write path {path}", path=path)
+
+/home/paul0henr1que/ENV/lib/python3.6/site-packages/_pytest/cacheprovider.py:131
+  /home/paul0henr1que/ENV/lib/python3.6/site-packages/_pytest/cacheprovider.py:131: PytestWarning: cache could not write path /home/paul0henr1que/codenation/python-1/.pytest_cache/v/cache/nodeids
+    self.warn("cache could not write path {path}", path=path)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+---- generated xml file: /home/paul0henr1que/codenation/python-1/output.xml ----
+==================== 7 passed, 2 warnings in 10.97 seconds =====================
