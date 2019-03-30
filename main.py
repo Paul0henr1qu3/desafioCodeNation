@@ -28,8 +28,6 @@ def q_1():
 
         return len(list_nationality)
 
-        ficheiro.close()
-
 # **Q2.** Quantos clubes (coluna `club`) diferentes existem no arquivo?
 def q_2():
     with open('data.csv', 'r') as ficheiro:
@@ -51,8 +49,6 @@ def q_2():
         list_club = sorted(set(list_club))
 
         return len(list_club)
-
-    ficheiro.close()
 
 # **Q3.** Liste o nome completo dos 20 primeiros jogadores de acordo com a coluna `full_name`.
 def q_3():
@@ -79,8 +75,7 @@ def q_3():
                 count += 1
             else:
                 pass
-
-        ficheiro.close()
+            
         return twenty_names
 
 # **Q4.** Quem são os top 10 jogadores que ganham mais dinheiro (utilize as colunas `full_name` e `eur_wage`)?
@@ -111,8 +106,7 @@ def q_4():
             nomes_maiores.append(max(dic_valores, key=dic_valores.get))
             del(dic_valores[max(dic_valores, key=dic_valores.get)])
             i += 1
-
-        ficheiro.close()
+            
         return nomes_maiores
 
 # **Q5.** Quem são os 10 jogadores mais velhos?
@@ -140,7 +134,6 @@ def q_5():
             del(dic_temp[max(dic_temp, key=dic_temp.get)])
             i += 1
 
-        ficheiro.close()
         return jogadores_velhos
 
 # **Q6.** Conte quantos jogadores existem por idade. Para isso, construa um dicionário onde as chaves são as idades e os valores a contagem.
@@ -163,5 +156,4 @@ def q_6():
             count = novas_idades.count(i)
             dict_age[i] = count
 
-        ficheiro.close()
         return dict_age
